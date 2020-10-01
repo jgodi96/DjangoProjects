@@ -19,7 +19,7 @@ from first_app import views
 from django.conf.urls import include
 urlpatterns = [
     path('',views.index, name='index'),
+    #can call whatever we want 'first_app'/
     path('first_app/',include('first_app.urls')),
     path('admin/', admin.site.urls)
-
 ]
